@@ -1,11 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      打卡纪录
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-list sliding="true">
+    <ion-list-header>
+      最近1个月的打卡记录
+    </ion-list-header>
+    <ion-item-group>
+      <ion-item *ngFor="let log of punchLog">
+        <h2>{{ log.date }}</h2>
+        <br>
+        <p>上班时间: {{ log.start }}</p>
+        <p>下班时间: {{ log.end }}</p>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
 
 </ion-content>

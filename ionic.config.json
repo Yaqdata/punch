@@ -1,6 +1,8 @@
 {
   "name": "punch",
-  "app_id": "1088b4ba",
+  "app_id": "86178359",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
