@@ -42,7 +42,7 @@ export class HomePage implements AfterViewInit, OnInit{
     })
   }
   private getMiniSeconds(start: Date) {
-    if (start.getHours() > 10) {
+    if (start.getHours() >= 10) {
       const end = new Date(Number.parseInt(this.getKey()) + this.hourDiff);
       return Number.parseInt(((end.getTime() - start.getTime()) / 1000).toString());
     }
